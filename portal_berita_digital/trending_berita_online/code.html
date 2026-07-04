@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trending - THE DISPATCH</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;600;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "primary": "#000666",
+                    "on-surface-variant": "#454652",
+                    "on-secondary-container": "#54647a",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#e0e0ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e4e1ea",
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "surface-container-high": "#eae7ef",
+                    "surface-bright": "#fbf8ff",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "outline": "#767683",
+                    "on-tertiary-container": "#e17c5a",
+                    "surface-variant": "#e4e1ea",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "on-secondary-fixed": "#0b1c30",
+                    "secondary-container": "#d0e1fb",
+                    "on-primary-fixed-variant": "#343d96",
+                    "on-primary-container": "#8690ee",
+                    "on-error-container": "#93000a",
+                    "on-background": "#1b1b21",
+                    "surface-dim": "#dbd9e1",
+                    "surface-container-low": "#f5f2fb",
+                    "surface-container": "#efecf5",
+                    "secondary-fixed": "#d3e4fe",
+                    "tertiary": "#380b00",
+                    "inverse-primary": "#bdc2ff",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#bdc2ff",
+                    "on-tertiary-fixed": "#390c00",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#1b1b21",
+                    "surface-tint": "#4c56af",
+                    "on-error": "#ffffff",
+                    "surface": "#fbf8ff",
+                    "tertiary-container": "#5c1800",
+                    "on-primary-fixed": "#000767",
+                    "tertiary-fixed": "#ffdbd0",
+                    "on-tertiary-fixed-variant": "#7b2e12",
+                    "primary-container": "#1a237e",
+                    "inverse-on-surface": "#f2eff8",
+                    "outline-variant": "#c6c5d4",
+                    "on-tertiary": "#ffffff",
+                    "background": "#fbf8ff",
+                    "secondary": "#505f76",
+                    "inverse-surface": "#303036"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "lg": "24px",
+                    "container-margin": "20px",
+                    "card-gap": "24px",
+                    "xxl": "48px",
+                    "xl": "32px",
+                    "xs": "8px",
+                    "md": "16px",
+                    "base": "4px",
+                    "sm": "12px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Newsreader"],
+                    "display-lg": ["Newsreader"],
+                    "body-md": ["Work Sans"],
+                    "meta": ["Work Sans"],
+                    "label-caps": ["Work Sans"],
+                    "body-sm": ["Work Sans"],
+                    "headline-md": ["Newsreader"],
+                    "body-lg": ["Work Sans"]
+            },
+            "fontSize": {
+                    "headline-sm": ["20px", {"lineHeight": "26px", "fontWeight": "600"}],
+                    "display-lg": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "meta": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #fbf8ff; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface mb-20">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-container-margin h-16 bg-surface border-b border-outline-variant">
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-variant transition-colors active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">THE DISPATCH</h1>
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-variant transition-colors active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined text-primary">search</span>
+</button>
+</header>
+<main class="pt-20 px-container-margin max-w-screen-md mx-auto">
+<!-- Section Header -->
+<div class="mb-xl">
+<div class="flex items-center gap-xs mb-base">
+<span class="w-8 h-[2px] bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase">Populer Sekarang</span>
+</div>
+<h2 class="font-display-lg text-display-lg text-on-surface">Trending di Indonesia</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Laporan mendalam mengenai topik yang paling banyak dibicarakan hari ini.</p>
+</div>
+<!-- Trending List - Bento Style Influence -->
+<div class="space-y-lg">
+<!-- Rank 1: Hero Trending -->
+<article class="group relative bg-surface border border-outline-variant overflow-hidden">
+<div class="relative h-64 overflow-hidden">
+<img alt="Top Trending" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A cinematic, high-angle shot of a bustling Indonesian city intersection at dusk, featuring long-exposure light trails from vehicles. The atmosphere is vibrant and modern with a professional journalistic aesthetic. The lighting is soft and golden, blending deep blues and rich oranges, creating a sophisticated corporate modern mood. The composition is clean, emphasizing urban development and energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwkOgHUqUeXQRjJElKMsTBps2vTUM5Xf71S-kjjOKdVxjrtya5SRC8p825fEXTWDiaGQFrg-XziqCPgzGBuXDW3Ejo4AkRm9qcpumc3oY3TxJLD9xnvXYFSFwwViXxPqpEElI_nzO9gNbnOZtYY6iabtuYKDTCc-_xWBeqCjnMbQ8MCbsuBhX4OxN4WSrDjVoLfAwf9RzG3KQ556mdOYTp-dlgpcUmau_UzzwX-I4vdqxsXv0rxmpgA4768IKG6SmGBx3VVnngKRA"/>
+<div class="absolute top-0 left-0 bg-primary text-white px-md py-xs font-headline-md text-headline-md">1</div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-primary text-white font-label-caps text-label-caps px-sm py-[2px] uppercase">Ekonomi</span>
+</div>
+</div>
+<div class="p-lg">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Pertumbuhan Ekonomi Digital Indonesia Diprediksi Melampaui Target 2024</h3>
+<div class="mt-sm flex items-center gap-md text-on-surface-variant">
+<span class="font-meta text-meta uppercase">5 Menit Lalu</span>
+<span class="font-meta text-meta uppercase">Oleh Redaksi Utama</span>
+</div>
+</div>
+</article>
+<!-- Grid Layout for 2nd and 3rd -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-card-gap">
+<!-- Rank 2 -->
+<article class="flex flex-col border border-outline-variant bg-surface group">
+<div class="relative h-48">
+<img alt="Trending 2" class="w-full h-full object-cover" data-alt="A minimalist and sharp architectural photograph of a modern glass skyscraper in Jakarta against a clear blue sky. The visual style is editorial and clean, using a palette of cool grays and deep blues. High-key lighting highlights the geometric patterns of the building, evoking a sense of calm authority and professional corporate integrity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB37ZizdUt1TJuKADb_T05ZTpItyfZTFKGW4nyodw-7wU1YLzKXkb12tUzixSghBz5Gsv4CBRQVNjjUdrfK-w9o5KzAr49VOV3wzqks2yNZESK01snbYOSB1SwbLbbijeOEZHb07ksstJ_jwXAKV7NwTIE-WRO1oFNk_UXakxlnuKW-AD_4nZrMyb2GWH-kfEjn1CPy7qjGsQJTIR1iKKrJkp4BXe-hdU6uktkJlgjJGHT9PFMEg0_g7EBDdHERft2-XMxeYRpjEjI"/>
+<div class="absolute top-0 left-0 bg-primary text-white px-sm py-xs font-headline-sm text-headline-sm">2</div>
+</div>
+<div class="p-md flex-grow">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-base block">Teknologi</span>
+<h3 class="font-headline-sm text-headline-sm group-hover:text-primary transition-colors">Peluncuran Satelit Baru Memperkuat Konektivitas di Wilayah 3T</h3>
+<p class="font-meta text-meta text-on-surface-variant mt-sm uppercase">15 Menit Lalu</p>
+</div>
+</article>
+<!-- Rank 3 -->
+<article class="flex flex-col border border-outline-variant bg-surface group">
+<div class="relative h-48">
+<img alt="Trending 3" class="w-full h-full object-cover" data-alt="A lush, green macro photograph of tropical foliage in a botanical garden setting, representing environmental focus. The image has a calm, journalistic feel with soft, diffused natural lighting. Deep greens and earthy tones dominate the palette, following the minimalist and editorial design system. The mood is serene and focused." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYMIEotWNl7ZU_r0t3znrJyNrh8xeNusGww0wZL5BfzOQrlTl6nL3yIeaMjzvFAR8H2XXIk7aKkrbKZ30ZyYCzHp_OQNB05fHz95BSW6xqLkkaaxBPjPVyD-HWnCFT8IFcGl_r_mijmOJfVYcsDuGKKjNWGNyQZG4B6wYgawKkoI1nWUrMVB3TAVA1AitSLb9jKp6u0QthhuK2PDnpaUKttWZiMjEKsfRz6MA8Xwzlj8SHY-1pCoGlsUlZMu2fGWzL6H_hbdjl9RQ"/>
+<div class="absolute top-0 left-0 bg-primary text-white px-sm py-xs font-headline-sm text-headline-sm">3</div>
+</div>
+<div class="p-md flex-grow">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-base block">Lingkungan</span>
+<h3 class="font-headline-sm text-headline-sm group-hover:text-primary transition-colors">Inisiatif Hijau: Restorasi Mangrove di Pesisir Utara Jakarta Dimulai</h3>
+<p class="font-meta text-meta text-on-surface-variant mt-sm uppercase">45 Menit Lalu</p>
+</div>
+</article>
+</div>
+<!-- List Layout for 4-10 -->
+<div class="border-t border-outline-variant pt-xl space-y-md">
+<!-- Rank 4 -->
+<article class="flex gap-md py-md border-b border-outline-variant group">
+<div class="flex-shrink-0 w-12 flex items-center justify-center font-headline-md text-headline-md text-outline-variant">4</div>
+<div class="flex-grow">
+<span class="font-label-caps text-label-caps text-secondary uppercase text-[10px]">Politik</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-tight">Analisis Kebijakan Baru: Dampak Terhadap Sektor Retail Menengah</h3>
+<p class="font-meta text-meta text-on-surface-variant mt-base">1 Jam Lalu</p>
+</div>
+<div class="flex-shrink-0 w-20 h-20">
+<img alt="Trending 4" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="A close-up of a fountain pen resting on a signed document, symbolizing political or legal action. The lighting is low-contrast and soft, emphasizing the texture of the paper. The color palette is composed of muted blacks, whites, and subtle slate blues, maintaining an editorial and professional corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIyP911EDlTvM78b6c_GT7sVwiXpI_WkcBVcb8GWQsJq7i29xsBh0fAUQgN8TszUwaML8GQ6WMmOoPJv-bwCNHsvGTggx87WwuCVKlIgCoC5JsFH7I0s0FaocmE6Sy9tjfikU5PvsAFeXwesFl4xlO3iQ_RkXJepoiG-U5giIZfW-_htYYq-40QCWgsdaaPpg4L0t8kt0ZTFdXc1xwQXrYsZKmH92BkwoiqwI-ntXpjJZbA7h2dOrcdGMSmva4ojpoV1CldB3e9Sk"/>
+</div>
+</article>
+<!-- Rank 5 -->
+<article class="flex gap-md py-md border-b border-outline-variant group">
+<div class="flex-shrink-0 w-12 flex items-center justify-center font-headline-md text-headline-md text-outline-variant">5</div>
+<div class="flex-grow">
+<span class="font-label-caps text-label-caps text-secondary uppercase text-[10px]">Budaya</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-tight">Pameran Seni Kontemporer di Galeri Nasional Tarik Ribuan Pengunjung</h3>
+<p class="font-meta text-meta text-on-surface-variant mt-base">2 Jam Lalu</p>
+</div>
+<div class="flex-shrink-0 w-20 h-20">
+<img alt="Trending 5" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="An interior view of a minimalist art gallery with clean white walls and soft track lighting. The scene is calm and sophisticated, reflecting high-end editorial standards. The colors are predominantly white and neutral tones with a focus on negative space. The mood is quiet and contemplative, matching the brand's professional identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0feIz8lf95t8ZD8LaeC5c37TB3l9Zanh0QnmDbU9haCT3SKh4wOaPLum4j2tiYD-00dZjHiWfrARSGwL4Ecmv-mU4D2pa2mLAqaZzGC86zhIg0V6Gpg5NCq6OIZC7syeCp-hjiVqx2bj4bCllfXX2tj__z64E1btsQA7ZTU7CLdiZZYtX_3298CGxOnV57Rp8XQCjnvC36IML8VeIoK9XRRhAA4h89oMAPLQUnXDXotdW0Tzrh_WnEq3yRBPFCoYbe6RhBJxPmP0"/>
+</div>
+</article>
+<!-- Rank 6 -->
+<article class="flex gap-md py-md border-b border-outline-variant group">
+<div class="flex-shrink-0 w-12 flex items-center justify-center font-headline-md text-headline-md text-outline-variant">6</div>
+<div class="flex-grow">
+<span class="font-label-caps text-label-caps text-secondary uppercase text-[10px]">Olahraga</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-tight">Tim Nasional Persiapkan Strategi Baru Jelang Kualifikasi Dunia</h3>
+<p class="font-meta text-meta text-on-surface-variant mt-base">3 Jam Lalu</p>
+</div>
+<div class="flex-shrink-0 w-20 h-20">
+<img alt="Trending 6" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="A sharp, dramatic shot of a stadium floodlight against a dark twilight sky. The image is minimalist and graphic, using deep blues and stark white light. The composition is clean and editorial, avoiding cluttered sports action for a more sophisticated, symbolic representation of athleticism and focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh-A8S9WW835KVGcO3jL9Gs5kW6ZSvcpr9eFgqAGnGEdIRoquhSp0i9gHgwoR5EDdhc2bQoZsetMKoyO6RoKFx4tb5TJsH-09lfnaZNjQve8ypZZbczK4sG1DFl3K_6-t2y86hOiiLArkDPYUp5UZls5GUA3xCZ0-B0dXnicpArDtbzx75VwXTHE1PWHCxx0cM7iycjejCAqJF0HJ7nJMlfTZTdN9NCHC44Hdv4zvCChYYE-humWACyEiWQs90axgPZv27XUQ4UhQ"/>
+</div>
+</article>
+<!-- Rank 7-10 placeholder style for brevity -->
+<div class="py-md text-center">
+<button class="font-label-caps text-label-caps text-primary border border-primary px-lg py-sm hover:bg-primary hover:text-white transition-colors">Lihat 4 Berita Lainnya</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-xs bg-surface border-t border-outline-variant">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-caps text-label-caps">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary font-bold" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="font-label-caps text-label-caps">Categories</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-label-caps text-label-caps">Bookmarks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-caps text-label-caps">Profile</span>
+</a>
+</nav>
+</body></html>

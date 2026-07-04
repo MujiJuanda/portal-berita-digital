@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#000767",
+                        "surface-container-high": "#eae7ef",
+                        "on-surface-variant": "#454652",
+                        "on-primary-fixed-variant": "#343d96",
+                        "primary-container": "#1a237e",
+                        "on-background": "#1b1b21",
+                        "tertiary": "#380b00",
+                        "inverse-on-surface": "#f2eff8",
+                        "surface-tint": "#4c56af",
+                        "primary-fixed-dim": "#bdc2ff",
+                        "on-secondary-fixed": "#0b1c30",
+                        "tertiary-fixed": "#ffdbd0",
+                        "secondary": "#505f76",
+                        "secondary-container": "#d0e1fb",
+                        "outline": "#767683",
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "on-surface": "#1b1b21",
+                        "primary": "#000666",
+                        "on-primary-container": "#8690ee",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "on-tertiary-container": "#e17c5a",
+                        "surface-container-low": "#f5f2fb",
+                        "on-secondary-container": "#54647a",
+                        "on-tertiary-fixed-variant": "#7b2e12",
+                        "tertiary-container": "#5c1800",
+                        "background": "#fbf8ff",
+                        "inverse-surface": "#303036",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#bdc2ff",
+                        "surface": "#fbf8ff",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c6c5d4",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#efecf5",
+                        "surface-variant": "#e4e1ea",
+                        "surface-bright": "#fbf8ff",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#e0e0ff",
+                        "secondary-fixed": "#d3e4fe",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e4e1ea",
+                        "surface-dim": "#dbd9e1",
+                        "on-tertiary-fixed": "#390c00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xs": "8px",
+                        "card-gap": "24px",
+                        "xxl": "48px",
+                        "xl": "32px",
+                        "md": "16px",
+                        "container-margin": "20px",
+                        "base": "4px",
+                        "lg": "24px",
+                        "sm": "12px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Work Sans"],
+                        "headline-sm": ["Newsreader"],
+                        "body-sm": ["Work Sans"],
+                        "body-md": ["Work Sans"],
+                        "headline-md": ["Newsreader"],
+                        "label-caps": ["Work Sans"],
+                        "meta": ["Work Sans"],
+                        "display-lg": ["Newsreader"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-sm": ["20px", {"lineHeight": "26px", "fontWeight": "600"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "meta": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "display-lg": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-container-margin h-16 bg-surface border-b border-outline-variant">
+<div class="flex items-center gap-md">
+<button class="hover:bg-surface-variant transition-colors p-base active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">BERITA ONLINE</h1>
+</div>
+<div class="flex items-center gap-md">
+<button class="hover:bg-surface-variant transition-colors p-base active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined text-primary" data-icon="search">search</span>
+</button>
+<button class="hover:bg-surface-variant transition-colors p-base active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined text-primary" data-icon="share">share</span>
+</button>
+</div>
+</header>
+<main class="pt-16 pb-24">
+<!-- Progress Indicator -->
+<div class="fixed top-16 left-0 w-full h-[2px] bg-outline-variant z-40">
+<div class="h-full bg-primary w-1/3"></div>
+</div>
+<!-- Hero Image Section -->
+<section class="w-full h-[353px] md:h-[530px] relative overflow-hidden">
+<img alt="Journalistic editorial background" class="w-full h-full object-cover" data-alt="A cinematic, high-angle photograph of a sophisticated newsroom at night, where desk lamps cast warm, focused pools of light onto vintage typewriters and modern tablets. The color palette is dominated by deep navy blues and pristine whites with subtle charcoal accents, creating a calm yet intellectually rigorous atmosphere. The lighting is low-key and dramatic, emphasizing the textures of paper and glass. The visual style is modern minimalist with a nod to traditional high-end journalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPpvAhKFXgMo1u9KPyckSQJzmltpusZv4ppGk9kqS2xi-4dqN7n0kQjvNi8MXHKq6YFlB12CK-tjdBGTrJP5cqIXO_Ck3tGBUiMDpK8GQsJtzODqJnMTmeBGgW6B8QO2Bk0Fvj1YxaaK1c6p4TYVZpZifAisAjCqEa1z02TnNXErqjn8DpoTv8dGDKFjzHWQK583WFDYxyleQy8-ZWKVcDpcmd1hY4wlrFGL2NY0VCXEHib0p05ohH7MrKGmGtRGMkAnL43hlShsI"/>
+<div class="absolute top-md left-container-margin">
+<span class="bg-primary text-on-primary font-label-caps text-label-caps px-sm py-xs tracking-wider">INTERNASIONAL</span>
+</div>
+</section>
+<!-- Article Content Canvas -->
+<article class="max-w-screen-md mx-auto px-container-margin mt-xl">
+<!-- Header Meta -->
+<header class="mb-lg">
+<h2 class="font-display-lg text-display-lg mb-md leading-tight text-on-background">The Future of Digital Sovereignty: Navigating the New Frontier</h2>
+<div class="flex items-center gap-md text-on-surface-variant border-y border-outline-variant py-md">
+<div class="w-10 h-10 rounded-full bg-surface-variant overflow-hidden border border-outline-variant">
+<img alt="Author portrait" data-alt="A professional headshot of a mature journalist with graying hair and spectacles, set against a clean, out-of-focus editorial office background. The lighting is soft and directional, typical of corporate portraiture, emphasizing authority and experience. The color tones are muted, focusing on slate blues and soft grays to match a high-end light-mode UI. The overall aesthetic is clean, sharp, and trustworthy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNmO-e0zRcrdkgARm4P3Eo65lvxmzVegQSEXbvKB37Y4LxtaTB2KLtusp1WRFqfRyLJaC-2yCN9YbHo4QUE8rkvuytVrhK-1-DbFZ1won7LuPO3qjSurlSxY1AbOoxobUqrSF1BphYB9n3B0BihDLrnGJWUrpvlxwt3UEBwqYdqQxZTARSDRXjGFsaGhVLd2xPrKC4YBrJOCxpaGjZ-BH8B8lv_O1q38bC1rrSoRWlps5QX1btW8GdwwKk2GTOwGe15w-z0D4UGfw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary">OLEH ALEXANDER VANCE</span>
+<span class="font-meta text-meta">October 24, 2023 • 12 MENIT BACA</span>
+</div>
+</div>
+</header>
+<!-- Body Content -->
+<div class="space-y-lg text-on-surface font-body-lg text-body-lg">
+<p>
+                    In the quiet corridors of global governance, a new dialogue is emerging—one that challenges the very foundations of how we perceive data, identity, and the digital commons. As the lines between physical borders and digital infrastructures blur, the concept of sovereignty is being rewritten by silicon and software.
+                </p>
+<p>
+                    For decades, the internet was viewed as a borderless utopia. Today, that vision is being replaced by a complex tapestry of regional regulations and technological firewalls. The transition is not merely technical; it is philosophical, touching upon the fundamental rights of the modern citizen in an increasingly interconnected world.
+                </p>
+<!-- Pull Quote -->
+<blockquote class="my-xl pl-lg border-l-4 border-primary italic">
+<p class="font-headline-md text-headline-md text-primary leading-relaxed">
+                        "The architecture of the next decade will not be defined by who controls the land, but by who governs the flow of information across invisible borders."
+                    </p>
+</blockquote>
+<p>
+                    Observers note that the shift toward localized data storage and national cloud infrastructures represents a significant departure from the decentralized origins of the web. Critics argue this lead to a "splinternet," while proponents suggest it is the only way to protect consumer privacy and national security in an era of unprecedented cyber vulnerability.
+                </p>
+<p>
+                    The implications for the individual are profound. From the encryption protocols that protect our personal messages to the algorithms that determine our creditworthiness, every aspect of digital life is now subject to this new geopolitical tug-of-war.
+                </p>
+</div>
+<!-- Tags -->
+<div class="mt-xxl flex flex-wrap gap-xs border-b border-outline-variant pb-lg">
+<span class="bg-surface-variant text-on-surface-variant font-label-caps text-label-caps px-md py-xs rounded-lg">TECHNOLOGY</span>
+<span class="bg-surface-variant text-on-surface-variant font-label-caps text-label-caps px-md py-xs rounded-lg">GEOPOLITICS</span>
+<span class="bg-surface-variant text-on-surface-variant font-label-caps text-label-caps px-md py-xs rounded-lg">PRIVACY</span>
+<span class="bg-surface-variant text-on-surface-variant font-label-caps text-label-caps px-md py-xs rounded-lg">GOVERNANCE</span>
+</div>
+<!-- Comment Section -->
+<section class="mt-xxl">
+<div class="flex items-center justify-between mb-lg">
+<h3 class="font-headline-sm text-headline-sm">Komentar (24)</h3>
+<button class="font-label-caps text-label-caps text-primary border border-primary px-lg py-xs hover:bg-primary hover:text-on-primary transition-all active:scale-95">KIRIM KOMENTAR</button>
+</div>
+<div class="space-y-xl">
+<!-- Comment Item -->
+<div class="flex gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex-shrink-0"></div>
+<div class="flex-1">
+<div class="flex items-center gap-sm mb-xs">
+<span class="font-label-caps text-label-caps text-on-background">MARCUS REED</span>
+<span class="font-meta text-meta text-outline">2 HOURS AGO</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                A timely piece. We often forget that these 'invisible borders' have very real consequences for software developers operating across different jurisdictions.
+                            </p>
+<button class="mt-xs text-primary font-label-caps text-[10px] tracking-widest hover:underline uppercase">BALAS</button>
+</div>
+</div>
+<!-- Comment Item -->
+<div class="flex gap-md pl-xl border-l border-outline-variant">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex-shrink-0"></div>
+<div class="flex-1">
+<div class="flex items-center gap-sm mb-xs">
+<span class="font-label-caps text-label-caps text-on-background">ELENA KOVACS</span>
+<span class="font-meta text-meta text-outline">1 HOUR AGO</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Exactly, Marcus. The compliance burden alone is enough to stifle innovation for smaller startups.
+                            </p>
+<button class="mt-xs text-primary font-label-caps text-[10px] tracking-widest hover:underline uppercase">BALAS</button>
+</div>
+</div>
+<!-- Comment Item -->
+<div class="flex gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex-shrink-0"></div>
+<div class="flex-1">
+<div class="flex items-center gap-sm mb-xs">
+<span class="font-label-caps text-label-caps text-on-background">SARAH JENKINS</span>
+<span class="font-meta text-meta text-outline">45 MIN AGO</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                I appreciate the nuance here. It's not just about control, it's about responsibility and accountability for the data we generate.
+                            </p>
+<button class="mt-xs text-primary font-label-caps text-[10px] tracking-widest hover:underline uppercase">BALAS</button>
+</div>
+</div>
+</div>
+<div class="mt-xl text-center">
+<button class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container hover:bg-surface-variant px-xxl py-md transition-colors w-full">MUAT KOMENTAR LAINNYA</button>
+</div>
+</section>
+</article>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-xs bg-surface border-t border-outline-variant">
+<a class="flex flex-col items-center justify-center text-primary font-bold opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-caps text-label-caps">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-label-caps text-label-caps">Kategori</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-label-caps text-label-caps">Simpan</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-caps text-label-caps">Profil</span>
+</a>
+</nav>
+</body></html>

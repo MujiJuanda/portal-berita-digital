@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Dispatch - Categories</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;600;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#000767",
+                    "surface-container-high": "#eae7ef",
+                    "on-surface-variant": "#454652",
+                    "on-primary-fixed-variant": "#343d96",
+                    "primary-container": "#1a237e",
+                    "on-background": "#1b1b21",
+                    "tertiary": "#380b00",
+                    "inverse-on-surface": "#f2eff8",
+                    "surface-tint": "#4c56af",
+                    "primary-fixed-dim": "#bdc2ff",
+                    "on-secondary-fixed": "#0b1c30",
+                    "tertiary-fixed": "#ffdbd0",
+                    "secondary": "#505f76",
+                    "secondary-container": "#d0e1fb",
+                    "outline": "#767683",
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "on-surface": "#1b1b21",
+                    "primary": "#000666",
+                    "on-primary-container": "#8690ee",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "on-tertiary-container": "#e17c5a",
+                    "surface-container-low": "#f5f2fb",
+                    "on-secondary-container": "#54647a",
+                    "on-tertiary-fixed-variant": "#7b2e12",
+                    "tertiary-container": "#5c1800",
+                    "background": "#fbf8ff",
+                    "inverse-surface": "#303036",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#bdc2ff",
+                    "surface": "#fbf8ff",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c6c5d4",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#efecf5",
+                    "surface-variant": "#e4e1ea",
+                    "surface-bright": "#fbf8ff",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#e0e0ff",
+                    "secondary-fixed": "#d3e4fe",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e4e1ea",
+                    "surface-dim": "#dbd9e1",
+                    "on-tertiary-fixed": "#390c00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "card-gap": "24px",
+                    "xxl": "48px",
+                    "xl": "32px",
+                    "md": "16px",
+                    "container-margin": "20px",
+                    "base": "4px",
+                    "lg": "24px",
+                    "sm": "12px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Work Sans"],
+                    "headline-sm": ["Newsreader"],
+                    "body-sm": ["Work Sans"],
+                    "body-md": ["Work Sans"],
+                    "headline-md": ["Newsreader"],
+                    "label-caps": ["Work Sans"],
+                    "meta": ["Work Sans"],
+                    "display-lg": ["Newsreader"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-sm": ["20px", {"lineHeight": "26px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "meta": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "display-lg": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md min-h-screen pb-24">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-container-margin h-16 bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline">
+<button class="material-symbols-outlined text-primary dark:text-primary-fixed-dim hover:bg-surface-variant dark:hover:bg-on-surface-variant transition-colors p-2 active:scale-95 duration-150 ease-in-out" data-icon="menu">menu</button>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tight">BERITA ONLINE</span>
+<button class="material-symbols-outlined text-primary dark:text-primary-fixed-dim hover:bg-surface-variant dark:hover:bg-on-surface-variant transition-colors p-2 active:scale-95 duration-150 ease-in-out" data-icon="search">search</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 px-container-margin max-w-screen-md mx-auto">
+<!-- Page Header -->
+<div class="mb-xl">
+<h1 class="font-display-lg text-display-lg text-primary mb-xs">Kategori</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Jelajahi laporan pilihan dari meja redaksi utama kami.</p>
+</div>
+<!-- Categories Bento/Grid Layout -->
+<div class="category-grid">
+<!-- World News - Larger Hero Card -->
+<div class="col-span-2 relative aspect-[16/9] overflow-hidden rounded-lg group cursor-pointer border border-outline-variant">
+<img alt="World News" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A cinematic, high-angle wide shot of a bustling international city square at dusk. The scene is illuminated by the soft amber glow of streetlamps and the cool blue tones of twilight, creating a sophisticated and professional editorial atmosphere. Pedestrians move with purpose through the architectural landscape, evoking a sense of global interconnectedness and journalistic gravity. The color palette is dominated by deep navy blues and muted grays, maintaining the brand's minimalist and modern corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwSyJ8XmWBhNSG24NVPAXuHpa54k1iZjmhpISQeystRM1Y9tlUJLJJXMH0WZDbKJypDSKf_QUYNZxGl0cv2q8RwIgKab_idWGJI9joqZysopvCiyWfaYt2cxAEYruBV0Igo14sqwBs0kXTECI4AowhZNM_zVh8h_3nFFE2DcMx8nAh3BHHlbjEQjlQFYrYsWMR2mUMerRV5bIli8JwQSuo0i9LDJHSQ4W3nBIbah95l_dsMWOIsQRy3KGk6qmZc_5CylNle3LoGt8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-lg">
+<span class="font-label-caps text-label-caps text-white mb-xs tracking-widest uppercase">URUSAN GLOBAL</span>
+<h2 class="font-headline-md text-headline-md text-white">Berita Dunia</h2>
+</div>
+</div>
+<!-- Business -->
+<div class="relative aspect-square overflow-hidden rounded-lg group cursor-pointer border border-outline-variant">
+<img alt="Business" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean, minimalist architectural detail of a modern skyscraper's glass facade reflecting a bright, clear sky. The image emphasizes geometric precision and corporate modernism, with sharp lines and a high-key lighting style. The palette features crisp whites, light slate blues, and professional deep blues, perfectly aligning with a sophisticated business news aesthetic. The overall mood is orderly, transparent, and authoritative, reflecting financial and commercial integrity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL_XYh-QQZfXrJ2d1rpwP9Dvj1GtTnVGeB3nukx52UL00TzJjypROlABVBrxKFwIjUuWrmjYanXCwPnji94wN_I-zR8zC0Cwpo-f0ZtcV-tmfR4MJsLA0PowW9kYAl379En8UylDKHC6ipj0hpRJK5kgsnd_SL8gZvipWDKnTwnscP8c0gwRbIh85hUqhTThIUwk8-kC1N17oIyeSw1xPfLmmx4r3VPeISJh5YqQCkeUi1qYhmWvjFeVsIqET0l0854mO4GXsURuA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-md">
+<h2 class="font-headline-sm text-headline-sm text-white">Ekonomi</h2>
+</div>
+</div>
+<!-- Technology -->
+<div class="relative aspect-square overflow-hidden rounded-lg group cursor-pointer border border-outline-variant">
+<img alt="Technology" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Macro photography of high-tech circuitry and fiber optic lights glowing with a subtle, cool-toned luminescence. The lighting is low-contrast with a soft, ethereal quality, focusing on technical detail without excessive flashiness. Deep blues and electric violets punctuate a dark, professional background, creating a mood of innovation and digital depth. The image represents cutting-edge technology reporting with a minimalist and sophisticated visual language." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXAfRXdDzYIneQv8MaYiu_XOmiT58Gs4TE-Ygvjpf1Oxx4d3QMo7-gm3MexHXB_QQZOiZd1JVtAmg21-rrmoQS__I1MQYciy7AVo5dIH_GkWtv6Gke9S2yXqEdqz0SXa9j-O-1DgP82KcMrS8_C_8OzDdpwdAhnifpnxvgHa_jRWvtvnMO4Iw2emjfkN6mCf2bNAqvM9X79Ts5_kz7pyjae-nuEGuPUHf5iMg2D0-6g6zh9waZV7ZkrMfzxgrnz9AWwspqLnsHbDk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-md">
+<h2 class="font-headline-sm text-headline-sm text-white">Teknologi</h2>
+</div>
+</div>
+<!-- Health -->
+<div class="relative aspect-square overflow-hidden rounded-lg group cursor-pointer border border-outline-variant bg-surface-container">
+<div class="p-md h-full flex flex-col justify-between border border-outline-variant rounded-lg">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="medical_services">medical_services</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Kesehatan</h2>
+</div>
+</div>
+<!-- Entertainment -->
+<div class="relative aspect-square overflow-hidden rounded-lg group cursor-pointer border border-outline-variant">
+<img alt="Entertainment" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A blurred, artistic shot of a stage performance with a single focused spotlight creating a dramatic, high-contrast effect. The lighting is warm and evocative, with deep shadows and soft highlights that suggest the excitement and culture of the arts. The color palette centers on rich mahogany, muted gold, and deep blacks, maintaining a refined and editorial approach to entertainment news. The mood is sophisticated and culturally rich, emphasizing performance over gossip." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa7TsolR9LswV9uuw2knqwn-NMVUi0hCzSex6f70Vb2U84zzZQjHzC8ePOwpzX75CDywVlV6jvqriC2MY9YG6nMZsRfuBi-14J-b1Ah555DtiqFYnqD9dDG6mg9vYJgGTi6L8lCNiv78n_UMpNYpekQlT3Elt44Fq7HGVtpg6ypbUdn6au5s_KftbSyMnZsqWlAsVKtdu2NU8SQHip9h_Gx3AK8ZLSijpzKlL6zFgHSqwmXneYcIS7Nd5gmdHofoLWEcI6gq4-1RQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-md">
+<h2 class="font-headline-sm text-headline-sm text-white">Hiburan</h2>
+</div>
+</div>
+<!-- Science -->
+<div class="relative aspect-square overflow-hidden rounded-lg group cursor-pointer border border-outline-variant bg-surface-container">
+<div class="p-md h-full flex flex-col justify-between border border-outline-variant rounded-lg">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="science">science</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Sains</h2>
+</div>
+</div>
+<!-- Lifestyle -->
+<div class="relative aspect-square overflow-hidden rounded-lg group cursor-pointer border border-outline-variant">
+<img alt="Lifestyle" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A minimalist overhead shot of a clean, wooden table with a white ceramic cup and an open, well-designed magazine. The scene is bathed in natural, soft daylight from a large window, creating a serene and unhurried lifestyle atmosphere. The color palette is dominated by neutral beiges, crisp whites, and natural wood tones, reflecting a calm and thoughtful approach to lifestyle reporting. The aesthetic is modern, airy, and grounded in daily human experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASUGOOJ9BxIAuJGTRRWjnE-mQ1OUQYzKmtE5ABd-y34Jri1XV9nbkgMQydl8xk4X_aDU5aTuIbtJs4mEmujLeWQf3COmjdb_fHamyXrMoU1-L-ZGMyNgGMDKaW4OOdthjvqKD-HjeAS6whm0JbxyWXV11jyrzmbEDFaseaSqc96a850DkGWobov-ZwWQcuSdd_EE3MQAITUTE3g-fosr-2u-EMq-fkAZvJ5-IiWt3JYeRsUZbauANnSEHWZOwNHUW18q0rJwVDHfY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-md">
+<h2 class="font-headline-sm text-headline-sm text-white">Gaya Hidup</h2>
+</div>
+</div>
+</div>
+<!-- Newsletter CTA Section -->
+<section class="mt-xxl mb-xl p-xl bg-surface-container-low border border-outline-variant rounded-lg">
+<h3 class="font-headline-md text-headline-md text-primary mb-sm text-center">Ringkasan Harian</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-center mb-lg">Berita terpenting dari setiap kategori, dikirimkan saat fajar.</p>
+<div class="flex flex-col gap-md">
+<input class="bg-surface border border-outline-variant px-md py-sm rounded focus:border-primary focus:ring-0 outline-none transition-colors" placeholder="Alamat email Anda" type="email"/>
+<button class="bg-primary text-white py-sm font-label-caps text-label-caps uppercase tracking-widest rounded hover:opacity-90 transition-opacity">BERLANGGANAN SEKARANG</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-xs bg-surface dark:bg-surface-dim border-t border-outline-variant dark:border-outline">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-caps text-label-caps">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim font-bold opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="font-label-caps text-label-caps">Kategori</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-label-caps text-label-caps">Simpan</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-caps text-label-caps">Profil</span>
+</a>
+</nav>
+</body></html>

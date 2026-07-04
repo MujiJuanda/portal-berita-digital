@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#000767",
+                    "surface-container-high": "#eae7ef",
+                    "on-surface-variant": "#454652",
+                    "on-primary-fixed-variant": "#343d96",
+                    "primary-container": "#1a237e",
+                    "on-background": "#1b1b21",
+                    "tertiary": "#380b00",
+                    "inverse-on-surface": "#f2eff8",
+                    "surface-tint": "#4c56af",
+                    "primary-fixed-dim": "#bdc2ff",
+                    "on-secondary-fixed": "#0b1c30",
+                    "tertiary-fixed": "#ffdbd0",
+                    "secondary": "#505f76",
+                    "secondary-container": "#d0e1fb",
+                    "outline": "#767683",
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "on-surface": "#1b1b21",
+                    "primary": "#000666",
+                    "on-primary-container": "#8690ee",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "on-tertiary-container": "#e17c5a",
+                    "surface-container-low": "#f5f2fb",
+                    "on-secondary-container": "#54647a",
+                    "on-tertiary-fixed-variant": "#7b2e12",
+                    "tertiary-container": "#5c1800",
+                    "background": "#fbf8ff",
+                    "inverse-surface": "#303036",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#bdc2ff",
+                    "surface": "#fbf8ff",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c6c5d4",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#efecf5",
+                    "surface-variant": "#e4e1ea",
+                    "surface-bright": "#fbf8ff",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#e0e0ff",
+                    "secondary-fixed": "#d3e4fe",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e4e1ea",
+                    "surface-dim": "#dbd9e1",
+                    "on-tertiary-fixed": "#390c00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "card-gap": "24px",
+                    "xxl": "48px",
+                    "xl": "32px",
+                    "md": "16px",
+                    "container-margin": "20px",
+                    "base": "4px",
+                    "lg": "24px",
+                    "sm": "12px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Work Sans"],
+                    "headline-sm": ["Newsreader"],
+                    "body-sm": ["Work Sans"],
+                    "body-md": ["Work Sans"],
+                    "headline-md": ["Newsreader"],
+                    "label-caps": ["Work Sans"],
+                    "meta": ["Work Sans"],
+                    "display-lg": ["Newsreader"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-sm": ["20px", {"lineHeight": "26px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "meta": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "display-lg": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            background-color: #fbf8ff;
+        }
+        .editorial-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 7, 103, 0.04);
+        }
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-container-margin h-16 bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline">
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-variant dark:hover:bg-on-surface-variant transition-colors active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tight">BERITA ONLINE</h1>
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-variant dark:hover:bg-on-surface-variant transition-colors active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" data-icon="search">search</span>
+</button>
+</header>
+<main class="pt-24 pb-32 px-container-margin max-w-2xl mx-auto">
+<!-- User Profile Header -->
+<section class="flex flex-col items-center mb-xl">
+<div class="relative mb-md">
+<div class="w-24 h-24 rounded-full overflow-hidden border border-outline-variant">
+<img alt="Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdYhEwgy0JWufJ_62ymJlxBZar9agTD2d3ErD_nPeYx6IgZRFQU9lVBpzbi6Gc1vw61lIkkDyMnwHjRV9zYGWRmJwJHSNycpv8Si7PKyVZSlZicHFbHltZN2eSvpioHRJRf31pcdcKsjUufTxOSSjDKkZbw6C_rvbr5KAJ9g_DeCUZGcHnc-kiDujM1L8WH3mCUQ98eRDvfHUEvZIIFeY4ZtOOLKJ0ed0TFo8MU5IJd6Ux9qP82caq21k2wk6rP9am9q2lZOQ5yew"/>
+</div>
+<button class="absolute bottom-0 right-0 bg-primary text-on-primary w-8 h-8 rounded-full flex items-center justify-center border-2 border-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px]" data-icon="edit">edit</span>
+</button>
+</div>
+<h2 class="font-display-lg text-display-lg text-primary text-center">Budi Santoso</h2>
+<p class="font-body-sm text-secondary mt-base uppercase tracking-widest font-medium">Kontributor Senior &amp; Pembaca</p>
+</section>
+<!-- Stats Grid -->
+<section class="grid grid-cols-3 gap-md mb-xl">
+<div class="bg-surface-container-low border border-outline-variant p-md text-center">
+<span class="font-label-caps text-label-caps text-secondary block mb-base uppercase">Dibaca</span>
+<span class="font-headline-sm text-headline-sm text-primary">124</span>
+</div>
+<div class="bg-surface-container-low border border-outline-variant p-md text-center">
+<span class="font-label-caps text-label-caps text-secondary block mb-base uppercase">Markah</span>
+<span class="font-headline-sm text-headline-sm text-primary">42</span>
+</div>
+<div class="bg-surface-container-low border border-outline-variant p-md text-center">
+<span class="font-label-caps text-label-caps text-secondary block mb-base uppercase">Tahun</span>
+<span class="font-headline-sm text-headline-sm text-primary">3</span>
+</div>
+</section>
+<!-- Bookmarked Articles -->
+<section class="mb-xxl">
+<div class="flex justify-between items-end mb-lg">
+<h3 class="font-headline-md text-headline-md text-primary">Berita yang Disimpan</h3>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors border-b border-secondary" href="#">LIHAT SEMUA</a>
+</div>
+<div class="space-y-lg">
+<!-- Bookmark Card 1 -->
+<div class="group flex flex-col md:flex-row gap-md border border-outline-variant bg-surface hover:editorial-shadow transition-all duration-300">
+<div class="md:w-1/3 aspect-video md:aspect-square overflow-hidden">
+<img alt="Satellite Earth" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEoaAwgas7F3PVic_TfrWsB2qAL8kuAFAiYqo-jMlRXOt4VVzV7o79AljLnSTdhQQOtSogwaeOJ_GQhiluw1je6ngJ4Pt5R_boqOPPejJV88s1bzEq3dlBBC8vjAOD9HpPuHCgAVXHin8UQQF4M2Si4iLsbmCRB2Pt79Rwl5RO4rTtoXsjjRJIwJG0IeGs9y5ZwAv-BbSsrOqjIhgnlWMliBBW7tRWNHC0RgPuG-PhfmWUcgLn0AC4hhJS8BAQ37on52obYcfFql4"/>
+</div>
+<div class="flex-1 p-md flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<span class="font-label-caps text-[10px] text-primary-container bg-secondary-container px-xs py-[2px] uppercase mb-sm inline-block">Geopolitik</span>
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm group-hover:text-primary transition-colors leading-tight">Rekonfigurasi senyap jalur perdagangan digital global.</h4>
+</div>
+<div class="mt-md flex items-center gap-xs font-meta text-meta text-secondary">
+<span>Marcus Vane</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span>8 menit baca</span>
+</div>
+</div>
+</div>
+<!-- Bookmark Card 2 -->
+<div class="group flex flex-col md:flex-row gap-md border border-outline-variant bg-surface hover:editorial-shadow transition-all duration-300">
+<div class="md:w-1/3 aspect-video md:aspect-square overflow-hidden">
+<img alt="Skyscraper" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrBYxXkGQ02jfYWva2LOmPx9KEdrrn-SHOpx6nOH0aU7vuIQ59O82tq93fEX89nk5Eyk1XVYGBmJqleGCzpVET307loRsf_qg7nxzO0Bt4WntLCVhy8S1XP48PawUGIof7w7GfCJ9iutdrdane7JeFAhs_y5JKqdbJhJt7AoobKkAlG3FldcDHR-wP2i0MH9JSmtXbCn24N5q_BRqgAWMu-u3gu1zIAXT9FiaxDQUg18Tu22mW1ixwGhSB7hGZjDkTAOlAA6tU_vA"/>
+</div>
+<div class="flex-1 p-md flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<span class="font-label-caps text-[10px] text-primary-container bg-secondary-container px-xs py-[2px] uppercase mb-sm inline-block">Arsitektur</span>
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm group-hover:text-primary transition-colors leading-tight">Fungsionalisme di era pasca-materialisme.</h4>
+</div>
+<div class="mt-md flex items-center gap-xs font-meta text-meta text-secondary">
+<span>Elena Rossi</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span>12 menit baca</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Settings & Account Options -->
+<section class="space-y-xl">
+<!-- Notification Settings -->
+<div>
+<h3 class="font-label-caps text-label-caps text-secondary uppercase mb-md border-b border-outline-variant pb-xs">Pengaturan Notifikasi</h3>
+<div class="space-y-base">
+<div class="flex items-center justify-between py-md">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="notifications">notifications</span>
+<div>
+<p class="font-body-md text-on-surface">Ringkasan Berita Harian</p>
+<p class="font-body-sm text-secondary">Terima ringkasan pagi dari berita utama.</p>
+</div>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between py-md">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="breaking_news">breaking_news</span>
+<div>
+<p class="font-body-md text-on-surface">Peringatan Berita Terkini</p>
+<p class="font-body-sm text-secondary">Peringatan waktu nyata untuk peristiwa penting dunia.</p>
+</div>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Account Management -->
+<div>
+<h3 class="font-label-caps text-label-caps text-secondary uppercase mb-md border-b border-outline-variant pb-xs">Akun</h3>
+<div class="divide-y divide-outline-variant">
+<button class="w-full flex items-center justify-between py-md group">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="person_outline">person_outline</span>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Informasi Pribadi</span>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between py-md group">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="payments">payments</span>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Paket Berlangganan</span>
+</div>
+<span class="font-label-caps text-[10px] text-white bg-primary px-sm py-[2px] rounded-full mr-sm">PREMIUM</span>
+</button>
+<button class="w-full flex items-center justify-between py-md group">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="lock">lock</span>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Keamanan &amp; Privasi</span>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Danger Zone -->
+<div class="pt-lg">
+<button class="w-full bg-surface-container-low border border-error/20 py-md flex items-center justify-center gap-sm text-error font-label-caps uppercase hover:bg-error-container transition-colors">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                    Keluar dari Berita Online
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-xs bg-surface dark:bg-surface-dim border-t border-outline-variant dark:border-outline">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-opacity active:opacity-80" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-caps text-label-caps">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-opacity active:opacity-80" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-label-caps text-label-caps">Kategori</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-opacity active:opacity-80" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-label-caps text-label-caps">Markah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim font-bold transition-opacity active:opacity-80" href="#">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-label-caps text-label-caps">Profil</span>
+</a>
+</nav>
+</body></html>
